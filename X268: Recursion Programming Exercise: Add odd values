@@ -1,0 +1,10 @@
+public int addOdd(int n) {
+  if (n <= 0) {
+    return 0;
+  }
+  if (n % 2 != 0) { // Odd value
+    return addOdd(n-2) + n;
+  } else { // Even value
+    return addOdd(n - 1);
+  }
+}
