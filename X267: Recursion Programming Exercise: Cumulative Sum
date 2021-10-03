@@ -1,0 +1,7 @@
+public int sumtok(int k) {
+  if (k <= 0) {
+    return 0;
+  } else {
+    return k+sumtok(k-1);
+  }
+}
