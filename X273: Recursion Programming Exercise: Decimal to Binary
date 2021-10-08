@@ -1,0 +1,6 @@
+public String decToBinary (int num) {
+  if (num < 2)
+    return Integer.toString(num);
+  else
+    return (decToBinary(num / 2)) + num % 2 ;
+}
